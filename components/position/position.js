@@ -44,7 +44,7 @@ export default class Position extends React.Component {
     render() {
         return (
             // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', }}>
-            <Animated.View style={{ position: 'absolute', left: 250, top: 250, opacity: this.state.fadeOutOpacity, }}>
+            <Animated.View style={{ position: 'absolute', left: this.props.x, top: this.props.y, opacity: this.state.fadeOutOpacity, }}>
                 <Svg height="500" width="500">
                     <Circle
                         cx="6"
